@@ -55,6 +55,15 @@ As a matter of fact, for a given set of points, its Delaunay Triangulation is un
 For the removal, triangles adjacent to the point are removed. Then an edge is chose and points are browsed one by one until the triangle formed by the edge and the point is valid 
 in the triangulation. This is added to the triangulation but also divides the hull in two different hull. In each hull the same process is applied recursively until the hull only contains three points, those latter are creating triangle which is also added to the triangulation.
 <p align="center">
-<img src="https://github.com/Omeganx/DelaunayTriangulator/blob/master/ressources/remove.gif?raw=true" width="350" height="350" title="Example of a delaunay triangulation">
+<img src="https://github.com/Omeganx/DelaunayTriangulator/blob/master/ressources/remove1.gif?raw=true" width="350" height="350" title="Example of point removal 1">
 </p>
 
+<p align="center">
+<img src="https://github.com/Omeganx/DelaunayTriangulator/blob/master/ressources/remove2.gif?raw=true" width="350" height="350" title="Example of point removal 2">
+</p>
+<p align="center">
+<img src="https://github.com/Omeganx/DelaunayTriangulator/blob/master/ressources/remove3.gif?raw=true" width="350" height="350" title="Example of point removal 3">
+</p>
+<p align="center">
+<img src="https://github.com/Omeganx/DelaunayTriangulator/blob/master/ressources/remove4.gif?raw=true" width="350" height="350" title="Example of point removal 4">
+</p>
