@@ -2,6 +2,31 @@
 Java implementation of a dynamic Delaunay triangulation. Provides add and remove point functions.
 
 ---
+## Usage
+
+First an instance of a delaunay handler need to be created with the width and height desired.
+```java
+DelaunayHandler delaunayhandler = new DelaunayHandler(width, height);
+```
+Then we can either add or remove a point
+```
+Point point = new Point(x, y);
+
+delaunayhandler.add(point);
+delaunayhandler.remove(point);
+```
+
+The code in ```Main.java``` shows an example using the processing core library, left click add a point and right click remove the last added point.
+
+<p align="center">
+<img src="https://github.com/Omeganx/DelaunayTriangulator/blob/master/ressources/example.png?raw=true" width="350" height="350">
+</p>
+
+
+This code was made as a rework of an old code for a future project.
+
+
+---
 
 ## Delaunay Triangulation
 A delaunay triangulation is a non-overlapping tilling such that the maximun angle of each triangle is minimsed.
