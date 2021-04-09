@@ -45,11 +45,11 @@ the no longer existing triangles and the new added point.
 <p align="center">
 <img src="https://github.com/Omeganx/DelaunayTriangulator/blob/master/ressources/add.gif?raw=true" width="350" height="350" title="Example of a delaunay triangulation">
 </p>
-A property of the Delaunay Triangulation is the locality of the pertubation, are incorrect triangles are adjacent to each other.
+A property of the Delaunay Triangulation is the locality of the pertubation, all incorrect triangles are adjacent to each other.
 
 ### Point Removal
 
-This is a little trickier, because points cannot be just linked together in order to complete the hole caused by the removal of a point. The property has to be conversed.
+This is a little trickier, because points cannot be just linked together in order to complete the hole caused by the removal of a point. The property has to be conserved.
 As a matter of fact, for a given set of points, its Delaunay Triangulation is unique.
 
 For the removal, triangles adjacent to the point are removed. Then an edge is chose and points are browsed one by one until the triangle formed by the edge and the point is valid 
